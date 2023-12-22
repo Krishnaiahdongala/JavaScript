@@ -34,6 +34,353 @@
     //     console.log("not in A.P");
     //   }
 
+// ........................... Easy level  .......................................
+
+
+// let x=[1,1,0,0,2,3];
+
+// y=[];
+
+// for(i=0;i<x.length;i++){
+//     c=0;
+//     for (let j = 0; j < x.length; j++) {
+       
+//         if(x[i]==x[j]){
+//          c=c+1;
+//         }
+//     }
+//     if(c==1){
+//         console.log(x[i]);
+//         y.push(x[i]);
+//     }
+   
+// }
+// console.log(y);
+
+// ---------------------------------------------------------
+
+// let p=+prompt("enter a num");
+//  let a=1;
+
+// for(i=1;i<=p;i++){
+//     a=a*i;
+// }
+// console.log(a);
+
+// ---------------------------------------------------------
+
+// a=[2,3,1,4,5];
+
+// sum=0
+// for(i=0;i<a.length;i++){
+//     if((a[i]&1)==0){
+//       sum=sum+a[i];
+      
+//     }
+   
+// }
+// console.log(sum);
+
+// ------------------------------------------------------------
+
+// function hello(a,b){
+//     return a+b;
+// }
+//  let sum=hello(2,5)
+//  console.log(sum);
+
+// -------------------------------------------------------------
+
+// function seconds(){
+//     return min*60;
+// }
+// let min=+prompt("enter minutes");
+// let r=seconds()
+// console.log(r);
+
+// --------------------------------------------------------
+
+// function increment(a){
+
+//     return a+1;
+// }
+// let result=increment(20);
+// console.log(result);
+
+// -----------------------------------------------------------
+
+// function days(){
+//       return age*365;
+// }
+//  let age=+prompt("enter age in years");
+//  let result=days();
+//  console.log(result);
+
+// -----------------------------------------------------------
+
+// function calculate_power(){
+
+//     let power=voltage*current;
+//     return power;
+
+// }
+
+// let voltage=+prompt("enter v");
+// let current=+prompt("enter i");
+// const p=calculate_power();
+// console.log("power is",p);
+
+// -------------------------------------------------------------------
+
+
+// function hello(a,b){
+       
+//        if(a==10||b==10||a+b==10){
+//               return true;
+//        }else{
+//         return false;
+//        }
+// }
+
+// let x=+prompt("num");
+// let y=+prompt("num");
+
+// let z=hello(x,y);
+// console.log(z);
+
+// ------------------------------------------------------------
+
+
+// function callback(a,b){
+   
+//     return a.length==b.length;
+
+// }
+
+// let x=prompt("enter a string");
+// let y=prompt("enter a string");
+// let b=callback(x,y);
+
+// console.log(b);
+
+// ---------------------------------------------------------
+
+// let a=(name)=>{
+
+//     return ` good morning ${name}`;
+
+// }
+// let s="krishna";
+// console.log(a(s));
+
+// ----------------------------------------------------
+
+// function ascending(array){
+//        let a=array.sort();
+//     return a;
+// }
+
+// let ar=["aa","cbc","dd","cab","bab"];
+// console.log(ascending(ar));
+
+// ------------------------------------------------------------------
+
+// let arr=[[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]];
+
+//    let aa=arr.map(callback);
+
+//    function callback(val,ind,arr){
+        
+//       let ab=val.sort(call)
+
+//           function call(a,b){
+//             return a-b;
+//           }
+
+//           return ab[ab.length-1];
+//    }
+
+//    console.log(aa);
+
+
+// -----------------------------------------------------------
+
+
+//    let ar=[20, 70, 40, 90];
+
+//    function callback(val,ind,arr){
+        
+//       let ab=val.sort(call)
+
+//           function call(a,b){
+//             return a-b;
+//           }
+
+//           return ab[ab.length-2]
+//    }
+
+//   let a=(callback(ar));
+//   b=[];
+//   b.push(a);
+//   console.log(b);
+
+
+// -------------------------------------------------------------
+
+// function removeDuplicates(arr) {
+//     let b = [];
+
+//     for (i = 0; i < arr.length; i++) {
+//         if (b.indexOf(arr[i]) == -1) {
+//             b.push(arr[i]);
+//         }
+//     }
+
+//     return b;
+// }
+
+// let arr= ["hello","hi","hello","hi"];
+// let result= removeDuplicates(arr);
+// console.log(result);
+
+// --------------------------------------------------------------
+
+
+// function hello(a){
+        
+    
+//     b=[];
+   
+//      for ( i = 0; i < a.length; i++) {
+//         c=0;
+//         for ( j =0; j < a.length; j++) {
+    
+//               if(a[i]==a[j]){
+//                    c=c+1;
+//               }
+             
+//         }
+//         if(c==1){
+//             console.log(a[i]);
+//             b.push(a[i]);
+//         }
+      
+//     }
+// return b;
+// }
+// let a=[0,1,2,1,2,3,4];
+
+// let result=hello(a);
+// console.log(result);
+
+
+// ---------------------------------------------------------------------
+
+
+// function Vowels(a) {
+//     count=0;
+//     for ( i = 0; i < a.length; i++) {
+    
+//         if(a[i]=="a"||a[i]=="e"||a[i]=="i"||a[i]=="o"||a[i]=="u"){
+          
+//             count++
+//         }
+
+//     }
+//     return count;
+// }
+// let a="hello";
+// let vowels=Vowels(a)
+// console.log(vowels);
+
+// ------------------------------------------------------------
+
+// function hello(a){
+//      b="";
+//     for (i = 0; i < a.length; i++) {
+//         if(a[i]==a[i].toUpperCase()){
+//                  b+=a[i].toLowerCase()
+//         }else{
+//             b+=a[i].toUpperCase();
+//         }
+//     }
+//    return b;
+// }
+// let a="Happy Birthday";
+// let result=hello(a);
+// console.log(result);
+
+// ----------------------------------------------------------
+
+// function multiply(i){
+
+//     let value=i*2;
+//     return value;
+      
+// }
+// let n=5;
+// for(i=1;i<=n;i++){
+       
+//     let result=multiply(i);
+//     console.log(result);
+//        }
+    
+// ------------------------------------------------------------------
+
+// function type_of_data(a){
+        
+//     if(typeof(a)=='Number'){
+           
+//         return "integer";
+//     }else{
+//         return "String";
+//     }
+      
+// }
+
+// let a="krishna";
+// let result=type_of_data(a);
+// console.log(result);
+
+// -------------------------------------------------------------------
+
+// let a=4;
+// let b=8;
+// let c=3;
+
+// b>a&&b>c?console.log(b+" is greatest"):console.log("not greatest");
+
+// ---------------------------------------------------------------------
+
+// let n=3;
+// let a=1;
+// for ( i=1; i <=n; i++) {
+    
+//          a=a*i;
+// }
+// console.log(a);
+
+// --------------------------------------------------------------------------
+
+// var a = [1, 2, 3, 4, 5];
+// b="";
+// for (i = 1; i <=a.length; i++) {
+   
+//       b=b+i;
+//       console.log(b);
+// }
+
+
+// ---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
 
 
     </script>

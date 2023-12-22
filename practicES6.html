@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <script>
+
+
+function fetchData(){
+
+     let promise= new Promise((resolve,reject)=>{
+
+       setTimeout(()=>{
+
+           const data={
+            name:"krishna",
+            id:1
+           }
+        if(data){
+            resolve("fetch successful")
+        }else{
+            reject("something went wrong")
+        }
+
+      },2000)
+
+     })
+
+     return promise;
+
+}
+
+function fetchComments(){
+        
+    let promise= new Promise((resolve,reject)=>{
+
+setTimeout(()=>{
+
+    const data={
+     name:"krishna",
+     id:1
+    }
+ if(data){
+     resolve("comment successful")
+ }else{
+     reject("something went wrong")
+ }
+
+},2000)
+
+})
+
+return promise;
+
+}
+
+async function asyncFunction(){
+
+    let response=await fetchData();
+    console.log(response);
+    let comment=await fetchComments();
+    console.log(comment);
+}
+asyncFunction()
+
+      
+
+      
+
+    </script>
+</body>
+</html>
